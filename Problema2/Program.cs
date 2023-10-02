@@ -9,6 +9,12 @@ namespace Problema_2
             int firstnumber = ReadNumberFromKeyboard("Va rog sa introduceti primul numar: ");
             int secondnumber = ReadNumberFromKeyboard("Va rog sa introduceti al doilea numar: ");
 
+            if (secondnumber == 0)
+            {
+                Console.WriteLine("Impartirea prin zero nu este permisa.");
+                return;  
+            }
+
             int rezultatintreg = firstnumber / secondnumber;
             int rest = firstnumber % secondnumber;
 
